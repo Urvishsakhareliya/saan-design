@@ -1,0 +1,353 @@
+/*
+=======================================================================
+                        media Query
+=======================================================================
+*/
+
+@media screen and (min-width: 1400px) {
+  .OfferModal .modal-dialog {
+    max-width: 1200px !important;
+  }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1699px) {
+  .spacer {
+    margin: 0 22rem;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+  .spacer {
+    margin: 0 12rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  html {
+    font-size: 9px;
+  }
+  .spacer {
+    margin: 0 9rem;
+  }
+
+  .category-content .owl-theme .owl-nav .owl-prev {
+    left: -0rem;
+  }
+  .category-content .owl-theme .owl-nav .owl-next {
+    right: -0rem;
+  }
+
+  .OfferModal .modal-dialog {
+    max-width: 1000px !important;
+  }
+
+  .OfferModal .modal-body .SummerCarnival h2 {
+    font-size: 6.2rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 8.5px;
+  }
+  .spacer {
+    margin: 0 10rem;
+  }
+
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+
+  .category-content .owl-theme .owl-nav .owl-prev {
+    left: -0rem;
+  }
+  .category-content .owl-theme .owl-nav .owl-next {
+    right: -0rem;
+  }
+
+  .OfferModal .modal-dialog {
+    max-width: 800px !important;
+  }
+
+  .OfferModal .modal-body .SummerCarnival h2 {
+    font-size: 5.2rem !important;
+  }
+
+  .TELF-details div.col-lg-7 {
+    padding-left: 4rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 8px;
+  }
+  .spacer {
+    margin: 0 8rem;
+  }
+
+  .category-content .owl-theme .owl-nav .owl-prev {
+    left: -0rem;
+  }
+  .category-content .owl-theme .owl-nav .owl-next {
+    right: -0rem;
+  }
+
+  .OfferModal .modal-dialog {
+    max-width: 600px !important;
+  }
+
+  .OfferModal .modal-body .SummerCarnival > img {
+    width: 25rem;
+  }
+
+  .OfferModal .modal-body .SummerCarnival h2 {
+    font-size: 4.2rem !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* =================== Navbar =================== */
+  .nav-menu {
+    position: absolute;
+    left: -110%;
+    top: 0rem;
+    background-color: #fff;
+    width: 50%;
+    transition: 0.8s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+    padding: 2rem;
+    height: 100vh;
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .nav-menu-scroll {
+    overflow-y: scroll;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0;
+    text-align: start;
+    color: var(--color-sky);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .nav-menu > li > .active-nav {
+    color: var(--color-blue) !important;
+  }
+
+  .hamburgerr {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    text-align: end;
+    padding-bottom: 2rem;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    /* z-index: 99999; */
+    /* padding-right: 10px; */
+  }
+  .hamburgerr > img {
+    transition: 0.5s;
+  }
+  .hamburgerr > img:hover {
+    transform: rotate(180deg);
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding-top: 1rem !important;
+  }
+
+  .nav-search {
+    margin-top: 1rem;
+  }
+  .re-searchBar {
+    width: 100%;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburgerr.active .bar:nth-child(1),
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .hamburgerr.active .bar:nth-child(3),
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-icon a img {
+    padding: 0;
+  }
+
+  .nav-menu li .active-nav::before {
+    display: none;
+  }
+
+  .nav-blacklayer {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+    z-index: 2;
+    transition: 0.5s;
+  }
+
+  .TELF-details div.col-lg-7 {
+    padding-left: 1rem !important;
+  }
+
+  .footer-bg .footer-menu {
+    margin-top: 1rem;
+  }
+
+  .footer-bg .gp-ul {
+    margin-top: 0;
+  }
+
+  .footer-logo li img {
+    width: 14rem;
+    border-radius: 1rem;
+  }
+
+  .nav-item > .sub-menu {
+    position: inherit;
+    width: 100%;
+    font-size: 2rem !important;
+    box-shadow: none;
+  }
+
+  .sub-menu li a {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 9px;
+  }
+  .spacer {
+    margin: 0 4rem;
+  }
+
+  /* banner */
+  .banner .owl-theme .owl-nav .owl-prev,
+  .banner .owl-theme .owl-nav .owl-next {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .banner .owl-theme .owl-nav {
+    bottom: -20px;
+  }
+
+  .category-content .owl-theme .owl-nav .owl-prev {
+    left: -0rem;
+    height: 4rem;
+    width: 4rem;
+  }
+  .category-content .owl-theme .owl-nav .owl-next {
+    right: -0rem;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .OfferModal .modal-dialog {
+    max-width: 500px !important;
+  }
+
+  .OfferModal .modal-body .SummerCarnival > img {
+    width: 25rem;
+  }
+
+  .OfferModal .modal-body .SummerCarnival h2 {
+    font-size: 3.2rem !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 8px;
+  }
+  .spacer {
+    margin: 0 2rem;
+  }
+
+  .nav-menu {
+    width: 80%;
+  }
+
+  /* banner */
+  .banner .owl-theme .owl-nav .owl-prev,
+  .banner .owl-theme .owl-nav .owl-next {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .banner .owl-theme .owl-nav {
+    bottom: -20px;
+  }
+
+  .category-content .owl-theme .owl-nav .owl-prev {
+    height: 4rem;
+    width: 4rem;
+    top: 100%;
+    left: 35%;
+    /* bottom: 0; */
+    transform: translate(0, 0);
+  }
+  .category-content .owl-theme .owl-nav .owl-next {
+    height: 4rem;
+    width: 4rem;
+    top: 100%;
+    right: 35%;
+    /* bottom: 0; */
+    transform: translate(0, 0);
+  }
+
+  .OfferModal .modal-body .SummerCarnival > img {
+    width: 20rem;
+  }
+
+  .OfferModal .modal-body .SummerCarnival h2 {
+    font-size: 2.2rem !important;
+  }
+  .OfferModal .modal-dialog {
+    margin: 10rem 2rem !important;
+  }
+
+  .FU-slider,
+  .TELF-details {
+    margin-top: 2rem;
+  }
+
+  .Newsletter-Head {
+    margin: 6rem 0;
+  }
+
+  .TELF-details div.col-12 h3,
+  .TELF-Head h2 {
+    font-size: 2.4rem !important;
+  }
+
+  .footer-logo li img {
+    width: 12rem;
+    border-radius: 1rem;
+  }
+}

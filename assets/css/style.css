@@ -1,0 +1,766 @@
+/* 
+------------------------------------------------------
+              --- TABLE OF CONTENT ---
+---------------------------------------------------------
+
+  01.  Fonts
+  02.  Global CSS
+  03.  Navbar
+  04.  Index
+   
+   
+   
+
+--------------------------------------------------------
+*/
+
+/* 
+============================================================= 
+                      01 - Fonts
+============================================================= 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
+
+/* jost-300 - latin */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/jost-v13-latin-300.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/jost-v13-latin-300.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/jost-v13-latin-300.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/jost-v13-latin-300.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/jost-v13-latin-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/jost-v13-latin-300.svg#Jost")
+      format("svg"); /* Legacy iOS */
+}
+/* jost-regular - latin */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/jost-v13-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/jost-v13-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/jost-v13-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/jost-v13-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/jost-v13-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/jost-v13-latin-regular.svg#Jost")
+      format("svg"); /* Legacy iOS */
+}
+/* jost-500 - latin */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/jost-v13-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/jost-v13-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/jost-v13-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/jost-v13-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/jost-v13-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/jost-v13-latin-500.svg#Jost")
+      format("svg"); /* Legacy iOS */
+}
+/* jost-600 - latin */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/jost-v13-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/jost-v13-latin-600.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/jost-v13-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/jost-v13-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/jost-v13-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/jost-v13-latin-600.svg#Jost")
+      format("svg"); /* Legacy iOS */
+}
+/* jost-700 - latin */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/jost-v13-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/jost-v13-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/jost-v13-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/jost-v13-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/jost-v13-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/jost-v13-latin-700.svg#Jost")
+      format("svg"); /* Legacy iOS */
+}
+
+/* 
+============================================================= 
+                      02 - Global CSS
+=============================================================   
+*/
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  overflow-x: hidden;
+  font-size: 1.8rem;
+  /* background-image: url(../images/body-back-2.png); */
+  /* background-position: bottom; */
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.SBC-section {
+  background-image: url(../images/body-back-2.png);
+  height: 100%;
+  padding-bottom: 10rem;
+}
+.FU-section {
+  background-image: url(../images/body-back-2.png);
+  height: 100%;
+  padding: 10rem 0 0 0;
+}
+
+:root {
+  --heading-color: #182569;
+  --color-blue: #172568;
+  --color-sky: #00acf5;
+  --color-white: #ffffff;
+  --color-dark: #2d2c2c;
+  --color-light: #ffffffcc;
+  --color-red: #c6262f;
+  --color-Yellow: #fbc11e;
+  --color-brown: #564244;
+  --color-pink: #a5296f;
+  --color-ligthYellow: #f2b950;
+  --color-darkYellow: #d4a360;
+  --color-grey: #585858;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+.spacer {
+  margin: 0 26rem;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-dark);
+}
+h2 {
+  font-size: 4.2rem !important;
+  line-height: 1.5em;
+  font-weight: 600;
+}
+h3 {
+  font-size: 3.2rem !important;
+  line-height: 1.5em;
+  font-weight: 600;
+}
+h4 {
+  font-size: 2.4rem !important;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+h5 {
+  font-size: 2.2rem !important;
+  line-height: 1.5em;
+}
+h6 {
+  font-size: 1.8rem !important;
+  line-height: 1.5em;
+}
+
+/* ============================================================= 
+                      03 - Navigation
+=============================================================  */
+/* Top Header */
+.TopHeader {
+  background-color: var(--color-Yellow);
+  color: var(--color-white);
+  padding: 1.3rem 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.TopHeader .mail-line {
+  height: 2rem;
+  width: 1px;
+  background-color: var(--color-white);
+  display: inline-block;
+  margin: 0 2.5rem;
+}
+
+.TopHeader .country-drop .dropdown-toggle {
+  border: none;
+  background-color: transparent;
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.TopHeader .country-drop .dropdown-toggle::after {
+  display: none;
+}
+
+.TopHeader .login {
+  margin: 0 4rem;
+}
+
+.navbar {
+  display: block;
+  padding: 0 0 1.6rem 0;
+  background-color: var(--color-white);
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-black);
+}
+
+.nav-menu {
+  display: flex;
+  width: 100%;
+}
+
+.nav-item {
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+
+.nav-item > .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  width: 17.5rem;
+  text-align: left;
+  padding: 0 2.5rem;
+}
+
+.nav-item > .sub-menu li {
+  padding-bottom: 2.4rem;
+}
+
+.nav-item .sub-menu li:first-child {
+  padding-top: 2.4rem;
+}
+
+/* ----- */
+.nav-item:hover .sub-menu {
+  display: block !important;
+}
+
+.sub-menu li a {
+  font-size: 1.6rem;
+  color: var(--color-black);
+  font-weight: 400;
+}
+.sub-menu li a:hover {
+  color: var(--color-red);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--color-black);
+  padding: 1rem 1rem;
+  position: relative;
+  font-size: 1.6rem;
+  /* margin: 0 calc(); */
+}
+
+.nav-item:last-child {
+  margin-right: 0.8rem;
+}
+
+.nav-link:focus {
+  color: var(--color-black) !important;
+}
+
+.nav-item:hover > a {
+  color: var(--color-red);
+}
+
+.nav-menu > li > .active-nav {
+  color: var(--color-red) !important;
+}
+
+.nav-menu-icons li {
+  padding: 0 1rem;
+}
+
+.top-search {
+  background-color: #f7f7f7;
+  padding: 1rem 0;
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.top-search .input-group-addon {
+  line-height: 4rem;
+  margin-right: 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: var(--color-black);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.top-search .input-group-addon img {
+  width: 3rem;
+}
+
+.top-search .close-search img {
+  width: 2.2rem;
+}
+
+.top-search input.form-control {
+  color: var(--color-black) !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.top-search input.form-control {
+  background-color: transparent;
+  border: none;
+  -moz-box-shadow: 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px;
+  -o-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+  color: #fff;
+  height: 4rem;
+  font-size: 2rem;
+  padding: 0 1.6rem;
+}
+
+.top-search .input-group-addon.close-search {
+  cursor: pointer;
+}
+
+/* Banner */
+
+.banner .owl-carousel {
+  position: relative;
+}
+.banner .owl-theme .owl-nav {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #151515;
+  display: flex;
+}
+
+.banner .owl-theme .owl-nav .owl-prev,
+.banner .owl-theme .owl-nav .owl-next {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white) !important;
+  font-size: 4rem !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.banner .owl-theme .owl-nav .owl-prev:hover,
+.banner .owl-theme .owl-nav .owl-next:hover {
+  background-color: #151515 !important;
+  color: var(--color-white);
+}
+
+.Category-Heading {
+  color: var(--color-brown);
+  margin: 11rem 0 6rem 0;
+}
+
+/*  */
+.Category-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.Category-ul li span {
+  display: inline-block;
+  font-size: 2.4rem;
+  color: var(--color-grey);
+  padding: 0.2rem 0rem;
+  text-align: center;
+  border-radius: 1rem;
+  width: 12rem;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+
+.Category-ul li span:hover {
+  cursor: pointer;
+  background-color: var(--color-Yellow);
+  color: var(--color-white);
+}
+.Category-ul li .active-btn {
+  cursor: pointer;
+  background-color: var(--color-Yellow);
+  color: var(--color-white);
+}
+
+/*** main content ***/
+
+.category-content div {
+  /* margin: 5rem 0; */
+  color: var(--color-black);
+}
+
+/*** hide content and show on click ***/
+
+.category-content .content-Women,
+.category-content .content-Men,
+.category-content .content-Decore {
+  display: none;
+}
+
+.category-content .show {
+  display: block;
+}
+.category-content .pro-desc {
+  font-size: 2rem;
+}
+
+.category-content .owl-carousel {
+  position: relative;
+}
+.category-content .owl-theme .owl-nav {
+  color: #6f6f6f;
+  display: flex;
+}
+
+.category-content .owl-theme .owl-nav .owl-prev,
+.category-content .owl-theme .owl-nav .owl-next {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem !important;
+  background: var(--color-white);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.category-content .owl-theme .owl-nav .owl-prev {
+  left: -10rem;
+}
+.category-content .owl-theme .owl-nav .owl-next {
+  right: -10rem;
+}
+
+.category-content .owl-theme .owl-nav .owl-prev:hover,
+.category-content .owl-theme .owl-nav .owl-next:hover {
+  color: var(--color-white);
+  background: #151515;
+}
+
+/* Offer Modal */
+
+.OfferModal {
+  background-color: rgb(13, 13, 13, 60%) !important;
+}
+
+.OfferModal .modal-body {
+  padding: 0rem;
+  position: relative;
+}
+
+.OfferModal .modal-body .offer-row .left-content {
+  z-index: 10;
+}
+
+.OfferModal .modal-body .SummerCarnival {
+  padding: 5rem 2rem;
+}
+
+.OfferModal .modal-body .SummerCarnival h2 {
+  font-size: 7.2rem !important;
+  font-weight: bolder;
+  /* line-height: 5rem; */
+  margin: 3rem 0;
+  color: var(--color-grey);
+}
+
+.OfferModal .modal-body .SummerCarnival .ShopNow {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-size: 2.4rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.OfferModal .modal-body .modal-border {
+  border: 2px solid #c1c1c1;
+  height: 97%;
+  width: 98%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.SummerCarnival-image {
+  background-image: url(../images/SummerCarnival-image.jpg);
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.modal-close-btn {
+  display: inline-block;
+  position: absolute;
+  top: -1.5rem;
+  right: -0.5rem;
+  z-index: 10;
+  width: 4rem;
+}
+
+.shopWomen {
+  display: inline-block;
+  padding: 1rem;
+  background-color: rgb(0, 0, 0, 80%);
+  border-radius: 0px 5px 5px 0px;
+  font-size: 2.4rem;
+  color: var(--color-white);
+  margin-bottom: 4rem;
+}
+
+/* THE EPITOME OF LUXURY FASHION */
+.TELF-Head {
+  margin-top: 14rem;
+}
+
+.TELF-details {
+  margin-top: 6.2rem;
+}
+
+.TELF-details .blog-comment {
+  margin-top: 1.9rem;
+}
+
+.TELF-details .blog-comment li span {
+  color: hsla(0, 0%, 35%, 1);
+}
+
+.TELF-details div.col-7 h6 {
+  font-weight: 400;
+  margin-top: 0.8rem;
+  color: hsla(0, 0%, 35%, 1);
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid rgba(88, 88, 88, 0.2);
+}
+
+.TELF-details div.col-lg-7 {
+  padding-left: 11.8rem !important;
+}
+
+.TELF-details .date {
+  margin-top: 1.8rem;
+  color: hsla(0, 0%, 35%, 1);
+}
+
+/* .FU-slider {
+  margin-top: 10rem;
+} */
+
+.slider-label {
+  width: 27.4rem;
+  height: 12.8rem;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.FU-slider .owl-nav {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+}
+.FU-slider .owl-nav {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #151515;
+  display: flex;
+}
+
+.FU-slider .owl-nav .owl-prev,
+.FU-slider .owl-nav .owl-next {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white) !important;
+  font-size: 4rem !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.FU-slider .owl-nav .owl-prev:hover,
+.FU-slider .owl-nav .owl-next:hover {
+  background-color: #151515 !important;
+  color: var(--color-white);
+}
+
+.Newsletter-Head {
+  color: hsla(357, 12%, 30%, 1);
+  padding-bottom: 9.5rem;
+}
+
+.Sign-Up-input {
+  margin-top: 3.4rem;
+}
+
+.Sign-Up-input input {
+  padding: 1.6rem 3.6rem;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.Sign-Up-input button {
+  background-color: var(--color-red);
+  padding: 1.4rem 3.8rem;
+  border: none;
+  color: var(--color-white);
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-dialog {
+  margin: 10rem auto !important;
+}
+
+/* --------- Footer  ---------- */
+.footer-bg {
+  background-color: rgba(103, 88, 93, 0.9);
+  padding-top: 4.8rem;
+}
+
+.footer-bg .footer-logo {
+  margin-bottom: 3rem;
+}
+
+.footer-logo li img {
+  border-radius: 1rem;
+}
+
+.footer-bg .SAAN-details li {
+  margin-bottom: 1.9rem;
+  color: var(--color-white);
+  font-size: 1.8rem;
+}
+
+.footer-bg .SAAN-details li span {
+  margin-left: 1.2rem;
+}
+
+.footer-bg .footer-menu {
+  margin-top: 7rem;
+}
+
+.footer-bg .footer-menu h4 {
+  color: var(--color-ligthYellow);
+  margin-bottom: 2.6rem;
+}
+
+.footer-bg ul li {
+  margin-bottom: 2.2rem;
+}
+.footer-bg ul li a {
+  font-size: 1.8rem;
+  color: var(--color-white);
+}
+
+.footer-bg .social-icon li {
+  margin: 0 1.5rem 1.5rem 0;
+}
+
+.footer-bg .gp-ul {
+  margin-top: 1.5rem;
+}
+
+.footer-bg .footer-border {
+  border: 1px solid #b6b6b6;
+}
